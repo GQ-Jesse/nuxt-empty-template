@@ -36,7 +36,7 @@ module.exports = {
   */
  // 当前版本的element-ui不兼容nuxt.js，下一个版本会兼容element-ui@2.8.2 
     // 解决办法：
-      // 1.卸载当前版本的element-ui,安装特定版本的element-ui@2.7.2(我才用此方法)
+      // 1.卸载当前版本的element-ui,安装特定版本的element-ui@2.7.2(我用此方法)
       // 卸载
       // npm uninstall element-ui
       // 安装
