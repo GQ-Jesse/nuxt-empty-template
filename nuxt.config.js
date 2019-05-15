@@ -34,8 +34,19 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
+ // 当前版本的element-ui不兼容nuxt.js，下一个版本会兼容element-ui@2.8.2 
+    // 解决办法：
+      // 1.卸载当前版本的element-ui,安装特定版本的element-ui@2.7.2(我才用此方法)
+      // 卸载
+      // npm uninstall element-ui
+      // 安装
+      // npm install element-ui@2.7.2 -S
+      
+      // 2.在根目录下的nuxt.config.js，修改plugins
+      // 替换原有的'@/plugins/element-ui'为{ src: '@/plugins/element-ui', ssr: false}
   plugins: [
     '@/plugins/element-ui'
+    // { src: '@/plugins/element-ui', ssr: false} // 当前版本的element-ui不兼容nuxt.js 解决办法：1.卸载当前版本的element-ui,安装特定版本的element-ui@2.7.0
   ],
 
   /*
